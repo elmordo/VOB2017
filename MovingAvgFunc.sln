@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MovingAvgFunc", "MovingAvgF
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MovingAvgObj", "MovingAvgObj\MovingAvgObj.vcxproj", "{116CA098-58DA-412B-8FD9-F275BB47E0CA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleXml", "SimpleXml\SimpleXml.vcxproj", "{7D636049-763F-4499-8ED0-49D912C3B322}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -21,6 +23,10 @@ Global
 		{116CA098-58DA-412B-8FD9-F275BB47E0CA}.Debug|Win32.Build.0 = Debug|Win32
 		{116CA098-58DA-412B-8FD9-F275BB47E0CA}.Release|Win32.ActiveCfg = Release|Win32
 		{116CA098-58DA-412B-8FD9-F275BB47E0CA}.Release|Win32.Build.0 = Release|Win32
+		{7D636049-763F-4499-8ED0-49D912C3B322}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7D636049-763F-4499-8ED0-49D912C3B322}.Debug|Win32.Build.0 = Debug|Win32
+		{7D636049-763F-4499-8ED0-49D912C3B322}.Release|Win32.ActiveCfg = Release|Win32
+		{7D636049-763F-4499-8ED0-49D912C3B322}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
