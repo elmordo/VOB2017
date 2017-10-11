@@ -29,3 +29,8 @@ void Attribute::setValue(const string &val)
 {
 	value = val;
 }
+
+bool Attribute::operator ==(const string &otherName) const
+{
+	return name == otherName;
+}

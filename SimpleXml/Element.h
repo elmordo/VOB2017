@@ -2,7 +2,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <algorithm>
 
 #include "Node.h"
 #include "Attribute.h"
@@ -17,8 +17,6 @@ public:
 
 	// hold child nodes
 	typedef vector<Node *> NodeList;
-
-	typedef map<int, NodeList> MyMap;
 
 	// hold attributes related to element
 	typedef vector<Attribute> AttrList;
@@ -38,13 +36,20 @@ public:
 
 	Element();
 
+	Element(const string &type);
+
 	virtual ~Element();
 
-	bool hasAttribute(string name) const;
+	// return true if element has attribute of the name
+	bool hasAttribute(const string &name) const;
 
-	void setAttribute(string name, string value);
+	// set value of the attribute
+	void setAttribute(const string &name, const string &value);
 
-	void removeAttribute(string name);
+	// get attribute by given name. If attribute is not set, create it
+	Attribute &getAttribute(const string &name);
+
+	void removeAttribute(const string &name);
 
 	const AttrList &getAttributes() const;
 
@@ -55,5 +60,7 @@ public:
 	void insertChildBefore(Node *newChild, Node *beforeChild);
 
 	const NodeList &getChildren() const;
+
+	const string &getType() const;
 
 };

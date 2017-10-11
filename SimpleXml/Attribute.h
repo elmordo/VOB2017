@@ -30,5 +30,7 @@ public:
 
 	void setValue(const string &val);
 
+	bool operator ==(const string &otherName) const;
+
 };
 

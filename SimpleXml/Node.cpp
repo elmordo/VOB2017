@@ -1,4 +1,5 @@
 #include "Node.h"
+#include "Element.h"
 
 
 Node::Node()
@@ -15,7 +16,25 @@ Node::~Node()
 void Node::setParentElement(Element *element)
 {
 	// TODO: remove this from old parent
+	if (parentElement)
+		parentElement->removeChild(this);
+
 	parentElement = element;
+}
+
+void Node::setParentToNode(Element *element, Node *node)
+{
+	node->setParentElement(element);
+}
+
+void Node::insertAfterNode(Node *oldNode, Node *newNode)
+{
+	oldNode->insertAfter(newNode);
+}
+
+void Node::insertBeforeNode(Node *oldNode, Node *newNode)
+{
+	oldNode->insertBefore(newNode);
 }
 
 void Node::insertBefore(Node *node)
@@ -40,6 +59,15 @@ void Node::insertAfter(Node *node)
 		node->prevNode = this;
 		nextNode = node;
 	}
+}
+
+void Node::remove(Node *node)
+{
+	Node *prev = node->prevNode;
+	Node *next = node->nextNode;
+
+	if (prev) prev->nextNode = next;
+	if (next) next->prevNode = prev;
 }
 
 Element *Node::getParentElement()

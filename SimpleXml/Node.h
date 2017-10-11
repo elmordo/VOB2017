@@ -19,6 +19,12 @@ class Node
 
 protected:
 
+	static void setParentToNode(Element *parent, Node *node);
+
+	static void insertAfterNode(Node *oldNode, Node *newNode);
+
+	static void insertBeforeNode(Node *oldNode, Node *newNode);
+
 	// set new parent element
 	void setParentElement(Element *element);
 
@@ -27,6 +33,9 @@ protected:
 
 	// set new next node (and update chain)
 	void insertAfter(Node *node);
+
+	// remove node from siblings
+	void remove(Node *node);
 
 public:
 
