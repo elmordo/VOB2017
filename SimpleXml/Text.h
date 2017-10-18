@@ -26,4 +26,3 @@ public:
 	void setText(const string &val);
 
 };
-

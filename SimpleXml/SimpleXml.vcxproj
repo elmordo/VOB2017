@@ -82,7 +82,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Attribute.h" />
+    <ClInclude Include="AXmlWriter.h" />
+    <ClInclude Include="ConsoleWriter.h" />
     <ClInclude Include="Element.h" />
+    <ClInclude Include="factories.h" />
+    <ClInclude Include="FileWriter.h" />
+    <ClInclude Include="IXmlWriter.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -90,7 +95,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Attribute.cpp" />
+    <ClCompile Include="AXmlWriter.cpp" />
+    <ClCompile Include="ConsoleWriter.cpp" />
     <ClCompile Include="Element.cpp" />
+    <ClCompile Include="factories.cpp" />
+    <ClCompile Include="FileWriter.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="SimpleXml.cpp" />
     <ClCompile Include="stdafx.cpp" />
