@@ -23,3 +23,7 @@ const ServiceLocator *Service::getServiceLocator() const
 {
 	return locator;
 }
+
+void Service::initialize()
+{
+}

@@ -20,5 +20,7 @@ public:
 
 	const ServiceLocator *getServiceLocator() const;
 
+	virtual void initialize();
+
 };
 

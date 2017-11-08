@@ -1,8 +1,9 @@
 #pragma once
 
 #include <string>
+#include <map>
 
-#include "Service.h"
+#include "Service.h"	
 #include "IServiceFactory.h"
 #include "ServiceContainer.h"
 
@@ -11,6 +12,10 @@ using namespace std;
 
 class ServiceLocator
 {
+
+	typedef map<string, ServiceContainer> ContainerMap;
+
+	ContainerMap services;
 
 public:
 

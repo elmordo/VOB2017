@@ -15,6 +15,8 @@ class ServiceContainer
 
 	Service *instance;
 
+	Service *createInstanceAndInitialize(const ServiceLocator *serviceLocator);
+
 public:
 	ServiceContainer();
 
@@ -22,7 +24,5 @@ public:
 
 	virtual ~ServiceContainer();
 
-	Service *getInstance();
-
+	Service *getInstance(const ServiceLocator *serviceLocator);
 };
-

@@ -1,6 +1,15 @@
 #include "ServiceContainer.h"
 
 
+Service *ServiceContainer::createInstanceAndInitialize(const ServiceLocator *serviceLocator)
+{
+	Service *instance = factory->createServiceInstance();
+	instance->setServiceLocator(serviceLocator);
+	instance->initialize();
+
+	return instance;
+}
+
 ServiceContainer::ServiceContainer()
 {
 	factory = NULL;
@@ -23,16 +32,17 @@ ServiceContainer::~ServiceContainer()
 		delete instance;
 }
 
-Service *ServiceContainer::getInstance()
+Service *ServiceContainer::getInstance(const ServiceLocator *serviceLocator)
 {
 	if (isShared)
 	{
 		if (instance == NULL)
-			instance = factory->createServiceInstance();
+			instance = createInstanceAndInitialize(serviceLocator);
+
 		return instance;
 	}
 	else
 	{
-		return factory->createServiceInstance();
+		return createInstanceAndInitialize(serviceLocator);
 	}
 }
