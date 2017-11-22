@@ -15,6 +15,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Builder", "Builder\Builder.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServiceManager", "ServiceManager\ServiceManager.vcxproj", "{7918B969-F1E0-4323-BD15-4C86784E2C37}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SQLiteExample", "SQLiteExample\SQLiteExample.vcxproj", "{710F1C1A-3CA2-4D10-AEA4-3878AA1E375C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PoolExample", "PoolExample\PoolExample.vcxproj", "{79E7662D-9ACD-4174-B73B-91BBA77FFFEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -45,6 +49,14 @@ Global
 		{7918B969-F1E0-4323-BD15-4C86784E2C37}.Debug|Win32.Build.0 = Debug|Win32
 		{7918B969-F1E0-4323-BD15-4C86784E2C37}.Release|Win32.ActiveCfg = Release|Win32
 		{7918B969-F1E0-4323-BD15-4C86784E2C37}.Release|Win32.Build.0 = Release|Win32
+		{710F1C1A-3CA2-4D10-AEA4-3878AA1E375C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{710F1C1A-3CA2-4D10-AEA4-3878AA1E375C}.Debug|Win32.Build.0 = Debug|Win32
+		{710F1C1A-3CA2-4D10-AEA4-3878AA1E375C}.Release|Win32.ActiveCfg = Release|Win32
+		{710F1C1A-3CA2-4D10-AEA4-3878AA1E375C}.Release|Win32.Build.0 = Release|Win32
+		{79E7662D-9ACD-4174-B73B-91BBA77FFFEA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{79E7662D-9ACD-4174-B73B-91BBA77FFFEA}.Debug|Win32.Build.0 = Debug|Win32
+		{79E7662D-9ACD-4174-B73B-91BBA77FFFEA}.Release|Win32.ActiveCfg = Release|Win32
+		{79E7662D-9ACD-4174-B73B-91BBA77FFFEA}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
